@@ -1,0 +1,11 @@
+<h1>Juegos disponibles</h1>
+
+<% listgames.forEach((e) => { %>
+  <br>
+  <li> <%= e.name %> </li>
+  <li>Descripción: <%= e.description %></li>
+  <li>Máximo número de jugadores: <%= e.maxPlayers %></li>
+  <br>
+<%})%>
+
+<a href="/userProfile">Volver a tu pagina</a>

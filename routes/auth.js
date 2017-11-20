@@ -21,9 +21,9 @@ router.post('/login', ensureLoggedOut(), passport.authenticate('local-login', {
   failureRedirect : '/auth/login'
 }));
 
-// router.get('/logout', ensureLoggedIn(), (req,res)=>{
-//   req.logout();
-//   res.redirect('/');
-// });
+router.get('/logout', ensureLoggedIn(), (req,res)=>{
+  req.logout();
+  res.redirect('/');
+});
 
 module.exports = router;

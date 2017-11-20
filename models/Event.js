@@ -3,8 +3,8 @@ const Schema   = mongoose.Schema;
 
 const eventSchema = new Schema({
   name: String,
-  game : { type : Schema.Types.ObjectId, ref:'Game', require: true },
-  host: String,
+  game : String,
+  host: { type : Schema.Types.ObjectId, ref:'User', require: true },
   city: String,
   adress : String,
   time : String,

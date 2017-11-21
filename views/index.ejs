@@ -1,4 +1,8 @@
 <h1>GeekMeet</h1>
 <h3>Bienvenido a la red 'GEEK' de juegos de mesa</h3>
+<% if (user) { %>
+  <a href="/logout">Logout</a>
+<% } else {%>
 <a href="/login">Login</a>
 <a href="/signup">Regístrate!</a>
+<% } %>
